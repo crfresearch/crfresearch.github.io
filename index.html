@@ -4,46 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Institute for Coherence Research</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #000;
+      background-color: #0a0a0a;
       color: #fefefe;
+      scroll-behavior: smooth;
     }
 
-    .banner-container {
+    header {
       width: 100%;
       overflow: hidden;
+      background-color: #000;
     }
 
-    .banner-img {
+    header img {
       width: 100%;
       height: auto;
       display: block;
     }
 
-    .section {
+    section {
       padding: 4rem 2rem;
       max-width: 960px;
       margin: auto;
     }
 
-    .section h2 {
-      font-weight: 800;
+    h2 {
       font-size: 2rem;
-      color: #7c3aed;
       margin-bottom: 1rem;
+      color: #7c3aed;
+      border-bottom: 1px solid #2c2c3d;
+      padding-bottom: 0.5rem;
     }
 
-    .section p {
-      font-weight: 400;
+    p {
       font-size: 1.1rem;
-      line-height: 1.6;
-      color: #ddd;
+      line-height: 1.7;
+      color: #e0e0e0;
     }
 
     footer {
@@ -52,53 +51,67 @@
       font-size: 0.9rem;
       color: #888;
       border-top: 1px solid #222;
-      background-color: #0a0a0a;
+      margin-top: 4rem;
+    }
+
+    nav {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 4px #7c3aed;
     }
   </style>
 </head>
 <body>
 
-  <!-- Banner -->
-  <header class="banner-container">
-    <img src="Banner.png" alt="Institute for Coherence Research Banner" class="banner-img" />
+  <header>
+    <img src="Banner.png" alt="Institute for Coherence Research Banner" />
   </header>
 
-  <!-- Sections -->
-  <section class="section" id="theory">
+  <nav>
+    <a href="#theory">The Theory</a>
+    <a href="#sim">Simulations</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="theory">
     <h2>The Theory</h2>
-    <p>
-      The Coherence-Regulating Field (CRF) is a memory-weighted feedback model that slows the decay of structure in dynamic systems.
-      It transforms temporal persistence into resistance—allowing coherence to survive longer, even under noise, entropy, or time.
-    </p>
+    <p>The Coherence-Regulating Field (CRF) is a universal feedback mechanism designed to extend the lifetime of structure in noisy, decaying systems. It works by storing memory of coherence and using that to dynamically slow decay over time.</p>
   </section>
 
-  <section class="section" id="simulations">
+  <section id="sim">
     <h2>Simulations</h2>
-    <p>
-      Our simulation lab explores how feedback memory affects structural decay. Compare time-evolving fields with and without CRF,
-      and watch persistence emerge from silence.
-    </p>
+    <p>View our ongoing tests, downloadable code, and visual models proving how coherence can survive and even grow when supported by memory-based feedback. Open-source tools coming soon.</p>
   </section>
 
-  <section class="section" id="about">
+  <section id="about">
     <h2>About the Institute</h2>
-    <p>
-      We are a research institute born from myth, built on math. Our mission is to unify coherence research across physics, computation,
-      and life sciences. Founded by Jeromiah Kernovia, our work begins where most equations end.
-    </p>
+    <p>Founded to bridge math, matter, and meaning, the Institute for Coherence Research explores the structure of persistence across space, life, and information. We are committed to transparent, testable theory born from curiosity, not permission.</p>
   </section>
 
-  <section class="section" id="contact">
-    <h2>Contact / Join</h2>
-    <p>
-      Email: <a href="mailto:jeromiahkernovia@coherenceresearchlab.org" style="color:#7c3aed;">jeromiahkernovia@coherenceresearchlab.org</a><br/>
-      GitHub: <a href="https://github.com/crfresearch" style="color:#7c3aed;">github.com/crfresearch</a>
-    </p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email us at <strong>jeromiahkernovia@coherenceresearchlab.org</strong> or visit our GitHub at <strong>github.com/crfresearch</strong>.</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    &copy; 2025 Institute for Coherence Research. All rights reserved.
+    © 2025 Institute for Coherence Research. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
   </footer>
 
 </body>
