@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Institute for Coherence Research</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #0a0a0a;
       color: #fefefe;
       scroll-behavior: smooth;
+      background-image: radial-gradient(circle at 50% 50%, rgba(124, 58, 237, 0.05), transparent 60%);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     header {
@@ -23,6 +28,29 @@
       width: 100%;
       height: auto;
       display: block;
+    }
+
+    nav {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0f0f1a;
+      box-shadow: 0 1px 10px rgba(124, 58, 237, 0.2);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #ccc;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #7c3aed;
     }
 
     section {
@@ -52,23 +80,6 @@
       color: #888;
       border-top: 1px solid #222;
       margin-top: 4rem;
-    }
-
-    nav {
-      text-align: center;
-      margin: 2rem 0;
-    }
-
-    nav a {
-      color: #ccc;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: #ffffff;
-      text-shadow: 0 0 4px #7c3aed;
     }
   </style>
 </head>
@@ -107,11 +118,6 @@
 
   <footer>
     © 2025 Institute for Coherence Research. All rights reserved.
-  </footer>
-
-</body>
-</html>
-
   </footer>
 
 </body>
